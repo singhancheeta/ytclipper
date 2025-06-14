@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>YT Clipper</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #1f2937;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #6b7280;
+    border-radius: 4px;
+  }
+</style>
+  </head>
+  <body class="flex h-screen bg-zinc-900 text-gray-100">
+
+    <!-- Sidebar -->
+    <aside class="w-64 bg-zinc-800 shadow-md px-6 py-8 flex flex-col">
+      <h2 class="text-6xl font-bold text-purple-400 mb-6">🎬 YT Clipper</h2>
+
+      <nav class="flex flex-col space-y-3 text-base font-medium">
+        <a href="{% url 'index' %}" class="hover:text-purple-300" class="hover:bg-stone-800">📼 Clip Video</a>
+        {% if user.is_authenticated %}
+        <a href="{% url 'logout' %}" class="hover:text-red-400 hover:bg-stone-800">🔓 Logout</a>
+        {% else %}
+        <a href="{% url 'login' %}" class="hover:text-green-400 hover:bg-stone-800">🔐 Login</a>
+        <a href="{% url 'register' %}" class="hover:text-blue-400 hover:bg-stone-800">📝 Register</a>
+        {% endif %}
+      </nav>
+
+      {% if user.is_authenticated %}
+      <div class="mt-auto text-sm text-gray-400 pt-6 border-t border-gray-700">
+        Logged in as <strong class="text-white">{{ user.username }}</strong>
+      </div>
+      {% endif %}
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 overflow-y-auto px-10 py-8 bg-zinc-900 col-md-9 ms-sm-auto col-lg-10 px-md-4">
+      {% block content %}
+      {% endblock %}
+    </main>
+
+  </body>
+</html>
