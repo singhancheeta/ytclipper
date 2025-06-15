@@ -61,10 +61,10 @@ Clipped videos are stored securely in `/media/clips/` and easily downloadable.
 ### 🔧 Prerequisites
 - Python 3.8+
 - pip
-- ffmpeg (`brew install ffmpeg` for macOS or use a suitable installer)
+- ffmpeg
 
 ---
 
 ### ⬇️ Clone the Repo
-git clone https://github.com/yourusername/ytbclipper.git
+git clone https://github.com/singhancheeta/ytbclipper.git
 cd ytbclipper
