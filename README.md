@@ -1,4 +1,3 @@
-# ytclipper
 # 🎬 YouTube Video Clipper
 
 **Clip. Customize. Download.**  
@@ -66,5 +65,5 @@ Clipped videos are stored securely in `/media/clips/` and easily downloadable.
 ---
 
 ### ⬇️ Clone the Repo
-git clone https://github.com/singhancheeta/ytbclipper.git
-cd ytbclipper
+- git clone https://github.com/singhancheeta/ytbclipper.git
+- cd ytbclipper
