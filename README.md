@@ -30,19 +30,6 @@ Clipped videos are stored securely in `/media/clips/` and easily downloadable.
 
 ---
 
-## 🖼️ Screenshots
-
-### 🔒 Login Page  
-<img src="https://i.imgur.com/your-login-screenshot.png" width="600"/>
-
-### 🎞️ Clip Video Page  
-<img src="https://i.imgur.com/your-clip-video-screenshot.png" width="600"/>
-
-### 📂 Clip History  
-<img src="https://i.imgur.com/your-clip-history-screenshot.png" width="600"/>
-
----
-
 ## 🛠️ Tech Stack
 
 | Layer       | Tools Used                        |
